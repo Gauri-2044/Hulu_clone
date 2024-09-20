@@ -1,11 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/graphik-trial');
 /* navigation bar */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-nav{
+
+button{
+    cursor: pointer;
+}
+nav {
     font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center;
@@ -16,267 +20,339 @@ nav{
     color: beige;
 }
 
-body{
+body {
     font-family: 'Graphik Trial', sans-serif;
     margin: 0;
     padding: 0;
-    /* height: 100vh;
-    width: 100vw; */
+    height: 100vh;
+    width: 100vw;
 }
+
 /* main-panel */
 
-main{
+main {
     background-image: url("images/topBack.jpeg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40%;
+    height: auto;
     width: 100%;
     padding: 20px;
+    /* opacity: 0.2; */
+    /* background :linear-gradient(to bottom,rgba(28, 26, 26,0.6),rgba(197, 189, 189,0.2)); */
 }
 
 /* ************************main section************************** */
-.topdiv1{
+.topdiv1 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 5%;
+    justify-content: center;
+    gap: 4%;
+    /* padding: 5%; */
+    text-align: center;
 }
-.topdiv1 .greenText{
-    color:rgb(8, 190, 114) ;
+
+.top {
+    padding: 10%;
+}
+
+.topdiv1 .greenText {
+    color: rgb(8, 190, 114);
+    font-weight: 600;
 
 }
-.topdiv1 .bigText{
+
+.topdiv1 .bigText {
     color: aliceblue;
     font-size: 2em;
     margin-top: 0;
 
+
 }
-.topdiv1 .greenBtn{
+
+.topdiv1 .greenBtn {
     background-color: rgb(8, 190, 114);
     color: black;
-    font-size: 1em;
-    width: 80%;
-    height: 40%;
+    font-size: 1.5em;
+    width: 100%;
+    height: auto;
     padding: 1rem;
     border: none;
     border-radius: 0.4rem;
     font-weight: bold;
 }
 
-#logIn{
-
+#logIn {
     border: none;
     background: none;
-    font-size: 1em;
-    color: aliceblue;
+    font-size: 1.5em;
+    color: rgb(72, 82, 91);
     margin-right: 1.3rem;
-    
 }
-#logIn:hover{
-    background-color:rgb(37, 26, 26);
+
+#logIn:hover {
+    background-color: rgb(37, 26, 26);
     border-radius: 0.5rem;
     padding: 0.6rem;
 }
-nav h1{
+
+nav h1 {
     font-size: 2.5em;
     color: rgb(8, 190, 114);
     margin-left: 0.6rem;
 }
-svg{
+
+svg {
     height: 50px;
     width: 100px;
-    
+
 }
+
+#topTerms {
+    text-decoration: underline;
+    color: azure;
+    margin: 1rem;
+}
+
+.smallText {
+    color: rgb(80, 77, 86);
+    font-weight: 500;
+}
+
+#topEndText {
+    color: azure;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#topEndText:hover {
+    text-decoration: none;
+}
+
 /* ***************************banner one************************* */
-.banner1{
+.banner1 {
     background-color: rgb(34, 44, 84);
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: azure;
-    padding: 2rem;
+    padding: 2%;
 }
-.banner1 .text{
+
+@media screen and  (max-width:600px) {
+    .banner1{
+        flex-direction: column;
+    }
+}
+
+.banner1 .text {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    gap:5%;
+    gap: 20px;
 }
 
-.btn button{
-    background-color: rgb(8, 190, 114); 
+.btn button {
+    background-color: rgb(8, 190, 114);
     border-radius: 0.5rem;
     border: none;
-    padding: 0.5rem;
-    font-weight: bold;
+    padding: 1rem;
+    font-weight: 700;
+    text-align: center;
 }
-.btn span{
+
+.btn span {
     text-decoration: underline;
 }
-.text{
+
+.text {
     text-align: left;
 }
-#text1{
-    color:rgb(8, 190, 114) ;
+
+#text1 {
+    color: rgb(8, 190, 114);
     font-weight: 600;
 }
-.text #text2{
-    font-size: 2rem;
+
+.text #text2 {
+    font-size: 2.2rem;
 
 }
-.text #text3{
+
+.text #text3 {
     font-size: 0.7rem;
 }
+
 /* ********************build the best plan for you *************************/
-.div1{
-    background: linear-gradient(to bottom,rgb(2, 104, 61),black);
+.div1 {
+    background: linear-gradient(to bottom, rgb(2, 104, 61), black);
     /* background-color:rgb(2, 104, 61); */
     padding: 2rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 2rem;
     flex-direction: column;
     height: auto;
 }
 
-.div1 .btn1{
+.div1 .btn1 {
     /* background-color:rgb(2, 104, 61) ; */
     background: none;
     color: azure;
     font-size: 1em;
-    width: 30%;
+    /* width: 30%; */
     border: 2px solid azure;
     border-radius: 0.4rem;
     /* margin-left: 30%; */
-    padding: 1.1rem;
+    padding: 1.1rem 6rem 1.1rem 6rem;
     font-weight: bold;
     font-size: 1.5rem;
+    /* margin: 2rem; */
 }
-.btn1:hover{
-    background-color:aliceblue;
+
+.btn1:hover {
+    background-color: aliceblue;
     color: black;
 }
 
 
-.bigDiv{
-    height: 1900px;
+.bigDiv {
+    height: auto;
     width: 100%;
     background-color: rgb(14, 12, 12);
-    padding: 30px 100px 20px 100px;
+    /* padding: 30px 100px 20px 100px; */
+    padding: 7rem;
     color: aliceblue;
 }
-.bigDiv .text1,.text4{
+
+.bigDiv .text1,
+.text4 {
     color: rgb(2, 104, 61);
     font-weight: bold;
     text-align: center;
 }
-.bigDiv .text2,.text5{
-    font-size: 3em;
+
+.main_heading {
+    font-size: 4em;
     font-weight: 900;
     text-align: center;
 }
-.bigDiv .text3,.text6{
+
+.bigDiv .text3,
+.text6 {
     font-size: 25px;
     text-align: center;
 }
 
-.cards{
+.cards {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    padding: 3rem;
 }
-@media (min-width : 600px) {
-    .card{
-        width: 80%;
-    } 
-} 
-.card{
-    height:600px ;
-    width: 40%;
-    margin-top: 20px;
+
+@media (max-width : 600px) {
+    .cards {
+        flex-wrap:nowrap;
+    }
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    height: 700px;
+    width: 35%;
+    padding: 1.5rem;
     background-color: antiquewhite;
-    border: 2px solid black;
     border-radius: 5%;
-    padding-left: 20px;
-    opacity: 0.4;
+    margin: 1.5rem;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
-#card1{
+
+.card:hover {
+    border: 5px solid rgb(86, 86, 100);
+    opacity: 0.5;
+}
+
+#card1 {
     background-image: url("images/card1Img.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-#card2{
+
+#card2 {
     background-image: url("images/card2Img.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-#card3{
+
+#card3 {
     background-image: url("images/card3Img.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
-#card4{
+
+#card4 {
     background-image: url("images/card4Img.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.card p{
+
+.card p {
     font-size: 1em;
 }
-.card h2{
+
+.card h2 {
     font-size: 1.5em;
     font-weight: 900;
 }
-.card:hover{
-    border: 5px solid rgb(53, 76, 95);
-}
-#trial{
-    background-color:rgb(43, 180, 123) ;
+
+#trial {
+    background-color: rgb(43, 180, 123);
     width: 300px;
     height: 50px;
     color: black;
     font-size: 1em;
     border-radius: 5px;
-    /* margin-left: 40%; */
     font-weight: bold;
     padding: 10px;
     border: none;
-    
+
 }
-.text7{
+
+.text7 {
     font-size: 1.2em;
     text-decoration: underline;
     text-align: center;
 }
-.bottomDiv{
+
+.bottomDiv {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-
-
 }
-.div2{
+
+.div2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top:100px ;
+    padding-top: 100px;
 }
-.div2 .content{
+
+.div2 .content {
     align-content: start;
 }
-.bar{
-   
+
+.bar {
+
     display: flex;
     justify-content: flex-start;
     /* flex-wrap: wrap; */
@@ -284,33 +360,37 @@ svg{
 
 }
 
-.contentChange{
+.contentChange {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 5rem;
 }
-.icons{
+
+.icons {
     width: 100%;
     display: flex;
     justify-content: space-between;
 
 }
-.bar h3{
-   
+
+.bar h3 {
     cursor: pointer;
-    
 }
-.bar #sportHeading{
+
+.bar #sportHeading {
     text-decoration: underline;
-    
+
 }
-.s{
+
+.s {
     height: 80px;
     width: 80px;
     border-radius: 50%;
     background-color: white;
 }
-.div2{
+
+.div2 {
     background-image: url("images/sport.jpeg");
     height: 1500px;
     padding: 20px;
@@ -321,11 +401,13 @@ svg{
     color: aliceblue;
 
 }
-.content h1{
+
+.content h1 {
     font-size: 2.5em;
     font-weight: bold;
 }
-.content p{
+
+.content p {
     font-size: 1.5em;
     text-align: center;
     text-wrap: wrap;
@@ -353,7 +435,7 @@ font-size: 1.5em;
     margin-top: 1rem;
 }
 
-.dropdown #drop{
+.dropdown .dropBtn{
     background-color: beige;
     border: none;
     border-radius: 1rem;
@@ -448,6 +530,7 @@ footer{
     justify-content: space-around;
     background-color: antiquewhite;
     padding: 50px;
+    font-size: 1.5rem;
 }
 
 footer .col{
@@ -468,5 +551,6 @@ footer .col{
 }
 footer .col span{
     color: rgb(148, 138, 138);
-    font-size: 1.2;
+    /* font-size: 2rem; */
+    margin: 1rem;
 }

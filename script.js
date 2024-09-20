@@ -51,3 +51,16 @@ eventHeading.addEventListener("click",()=>{
     icon4.src ="images/evnt4.jpeg";
     icon5.src ="";
 })
+
+
+let list = document.querySelector(".dropList");
+let btn = document.querySelector(".dropBtn");
+
+btn.addEventListener("click",()=>{
+    list.style.display = "inline-block";
+});
+
+function showDropDown()
+{
+
+}
