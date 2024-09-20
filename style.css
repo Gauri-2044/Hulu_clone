@@ -1,0 +1,472 @@
+@import url('https://fonts.cdnfonts.com/css/graphik-trial');
+/* navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 0px;
+    /* background-color: rgb(53, 50, 50); */
+    color: beige;
+}
+
+body{
+    font-family: 'Graphik Trial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh;
+    width: 100vw; */
+}
+/* main-panel */
+
+main{
+    background-image: url("images/topBack.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    padding: 20px;
+}
+
+/* ************************main section************************** */
+.topdiv1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+}
+.topdiv1 .greenText{
+    color:rgb(8, 190, 114) ;
+
+}
+.topdiv1 .bigText{
+    color: aliceblue;
+    font-size: 2em;
+    margin-top: 0;
+
+}
+.topdiv1 .greenBtn{
+    background-color: rgb(8, 190, 114);
+    color: black;
+    font-size: 1em;
+    width: 80%;
+    height: 40%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-weight: bold;
+}
+
+#logIn{
+
+    border: none;
+    background: none;
+    font-size: 1em;
+    color: aliceblue;
+    margin-right: 1.3rem;
+    
+}
+#logIn:hover{
+    background-color:rgb(37, 26, 26);
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+}
+nav h1{
+    font-size: 2.5em;
+    color: rgb(8, 190, 114);
+    margin-left: 0.6rem;
+}
+svg{
+    height: 50px;
+    width: 100px;
+    
+}
+/* ***************************banner one************************* */
+.banner1{
+    background-color: rgb(34, 44, 84);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: azure;
+    padding: 2rem;
+}
+.banner1 .text{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap:5%;
+}
+
+.btn button{
+    background-color: rgb(8, 190, 114); 
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.btn span{
+    text-decoration: underline;
+}
+.text{
+    text-align: left;
+}
+#text1{
+    color:rgb(8, 190, 114) ;
+    font-weight: 600;
+}
+.text #text2{
+    font-size: 2rem;
+
+}
+.text #text3{
+    font-size: 0.7rem;
+}
+/* ********************build the best plan for you *************************/
+.div1{
+    background: linear-gradient(to bottom,rgb(2, 104, 61),black);
+    /* background-color:rgb(2, 104, 61); */
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+    height: auto;
+}
+
+.div1 .btn1{
+    /* background-color:rgb(2, 104, 61) ; */
+    background: none;
+    color: azure;
+    font-size: 1em;
+    width: 30%;
+    border: 2px solid azure;
+    border-radius: 0.4rem;
+    /* margin-left: 30%; */
+    padding: 1.1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.btn1:hover{
+    background-color:aliceblue;
+    color: black;
+}
+
+
+.bigDiv{
+    height: 1900px;
+    width: 100%;
+    background-color: rgb(14, 12, 12);
+    padding: 30px 100px 20px 100px;
+    color: aliceblue;
+}
+.bigDiv .text1,.text4{
+    color: rgb(2, 104, 61);
+    font-weight: bold;
+    text-align: center;
+}
+.bigDiv .text2,.text5{
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+}
+.bigDiv .text3,.text6{
+    font-size: 25px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media (min-width : 600px) {
+    .card{
+        width: 80%;
+    } 
+} 
+.card{
+    height:600px ;
+    width: 40%;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding-left: 20px;
+    opacity: 0.4;
+}
+#card1{
+    background-image: url("images/card1Img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card2{
+    background-image: url("images/card2Img.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card3{
+    background-image: url("images/card3Img.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card4{
+    background-image: url("images/card4Img.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card p{
+    font-size: 1em;
+}
+.card h2{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.card:hover{
+    border: 5px solid rgb(53, 76, 95);
+}
+#trial{
+    background-color:rgb(43, 180, 123) ;
+    width: 300px;
+    height: 50px;
+    color: black;
+    font-size: 1em;
+    border-radius: 5px;
+    /* margin-left: 40%; */
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    
+}
+.text7{
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-align: center;
+}
+.bottomDiv{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+.div2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top:100px ;
+}
+.div2 .content{
+    align-content: start;
+}
+.bar{
+   
+    display: flex;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    gap: 10%;
+
+}
+
+.contentChange{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bar h3{
+   
+    cursor: pointer;
+    
+}
+.bar #sportHeading{
+    text-decoration: underline;
+    
+}
+.s{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+}
+.div2{
+    background-image: url("images/sport.jpeg");
+    height: 1500px;
+    padding: 20px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+
+}
+.content h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.content p{
+    font-size: 1.5em;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+/* ***************************plans********************** */
+
+.plans{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 50px;
+}
+.plans h1{
+    font-size: 3.0em;
+}
+.plans p,.plans span{
+font-size: 1.5em;
+/* text-align: center; */
+}
+.plans .text {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.dropdown #drop{
+    background-color: beige;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 20%;
+    padding: 1rem;
+}
+
+.dropdown ul{
+    background-color: beige;
+    text-align: left;
+    color: black;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    width: 20%;
+    margin-top: 10px;
+    display: none;
+}
+.plans ul li{
+    padding: 1rem;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.dropdown i{
+    font-size: 1rem;
+    margin-left: 5%;
+}
+
+.plans3{
+
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 5%;
+    padding: 1rem;
+}
+
+.actual_plans{
+    margin-top: 2rem;
+}
+
+#off{
+    font-size: 0.3rem;
+}
+.plan button{
+width: 100%;
+background-color: rgb(194, 194, 174);
+font-size: 1.5rem;
+padding: 1rem;
+}
+#middleBtn{
+    background-color: aqua;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 1rem;
+}
+/* *********************************plan table *********************** */
+.planPanel{
+    width:100%;
+    padding: 2rem;
+
+}
+table{
+    border: none;
+    font-size: 1.5rem;
+}
+table td{
+    padding: 1rem;
+}
+table i{
+    color: rgb(43, 180, 123);
+    font-size: 2rem;
+    font-weight: 900;
+}
+.dash,#dropArrow{
+    font-size: 1.5rem;
+
+}
+/* **************************************footer******************************************/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding: 50px;
+}
+
+footer .col{
+    display: inline-block;
+    
+}
+.mediaIcons{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 50px;
+
+}
+.mediaIcons img{
+    height:25px;
+    width:25px;
+    margin: 20px;
+}
+footer .col span{
+    color: rgb(148, 138, 138);
+    font-size: 1.2;
+}
