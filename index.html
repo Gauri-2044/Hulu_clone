@@ -17,6 +17,7 @@
     </style>
 
     <link href="style.css" rel="styleSheet">
+    <!-- <link href="utility.css" rel="styleSheet"> -->
 
 </head>
 
@@ -41,7 +42,7 @@
                         <span class="bigText">$14.99/month*</span>
 
                     </div>
-                    <button class="greenBtn">GET ALL THREE</button>
+                    <a href="get_all_there.html"><button class="greenBtn">GET ALL THREE</button></a>
                     <p id="topTerms">Terms Apply</p>
                     <p class="smallText">* Price will increase to $16.99/month on 10/17/2024.</p>
                 </div>
@@ -59,8 +60,9 @@
                 </div>
 
             </div>
-            <p id="topEndText">SIGN UP FOR HULU ONLY</p>
-        </div>
+            <a href="get_all_there.html">
+                <p id="topEndText">SIGN UP FOR HULU ONLY</p>
+        </div></a>
         </div>
     </main>
 
@@ -86,7 +88,7 @@
 
     <div class="div1">
         <h2>BUILD THE PLAN THAT'S RIGHT FOR YOU</h2>
-        <button class="btn1">START BUILDING</button>
+        <a href="start_building.html"><button class="btn1">START BUILDING</button></a>
     </div>
 
     <div class="bigDiv">
@@ -100,23 +102,30 @@
         </div>
 
         <div class="cards">
-            <div class="card" id="card1">
-                <p>Past & Current Seasons</p>
-                <h2>TV Shows</h2>
+            <div class="topcard">
+                <div class="card" id="card1">
+                    <p>Past & Current Seasons</p>
+                    <h2>TV Shows</h2>
+                </div>
+                <div class="card" id="card2">
+                    <p>New & Classic</p>
+                    <h2>Movies</h2>
+                </div>
             </div>
-            <div class="card" id="card2">
-                <p>New & Classic</p>
-                <h2>Movies</h2>
+            <div class="bottomcard">
+                <div class="card" id="card3">
+                    <p>groundbreaking</p>
+                    <h2>hulu Originals</h2>
+                </div>
+                <div class="card" id="card4">
+                    <p>Add-on</p>
+                    <h2>Premium</h2>
+                </div>
             </div>
-            <div class="card" id="card3">
-                <p>groundbreaking</p>
-                <h2>hulu Originals</h2>
-            </div>
-            <div class="card" id="card4">
-                <p>Add-on</p>
-                <h2>Premium</h2>
-            </div>
+
         </div>
+
+
         <div class="bottomDiv">
             <p class="text4">TRY HULU (WITH ADS) + LIVE TV FREE FOR 3 DAYS</p>
             <p class="main_heading">Live TV Makes It Better</p>
@@ -127,12 +136,28 @@
                 Includes access to
                 endless<br> entertainment with Disney+ and live sports
                 with ESPN+.</p>
-            <button id="trial">START YOUR FREE TRIAL </button>
-            <p class="text7">VIEW CHANNEL IN YOUR AREA -></p>
+            <a href="freeTrial.html"><button id="trial">START YOUR FREE TRIAL </button></a>
+            <div class="text7" id="search_channel" onclick="open()">VIEW CHANNEL IN YOUR AREA -></div>
 
         </div>
     </div>
 
+    <!-- ****************************popup div*************************** -->
+    <div class="card-pop">
+        <div class="icon" onclick="close()"> <i class="fa-solid fa-xmark" id="cross_icon"></i></div>
+       <div class="content">
+        <h1>Channels In Your Area</h1>
+        <p id="mainpara">Enter your home ZIP code for channels available in your area.</p>
+        <div class="takeInput">
+            <input type="text" id="zip-code" name="zip-code" placeholder="Enter Zip Code">
+            <button>Submit</button>
+        </div>
+
+        <p id="para">Live TV is available for those live local, regional, and national channels available in your area, which are
+            subject to change. Certain channels or content may not be available in all locations or on all devices.</p>
+       </div>
+        
+    </div>
 
     <!--*****************changable banner***************-->
     <div class="div2">
@@ -169,14 +194,14 @@
 
         <!-- dropdown -->
         <div class="dropdown">
-            <button class="dropBtn" >Disney Bundle <i class="fa-solid fa-caret-down"></i></button>
+            <button class="dropBtn">Disney Bundle <i class="fa-solid fa-caret-down"></i></button>
             <ul class="dropList">
                 <li>Hulu</li>
                 <li>Disney Bundle</li>
                 <li>Disney+,Hulu,Max Bundle</li>
                 <li>Hulu+Live TV</li>
             </ul>
-        </div>
+        </div>vfgtyv
 
         <div class="actual_plans">
             <button id="middleBtn">Best Value</button>
@@ -188,7 +213,9 @@
                         <div class="text">Duo Basic<br>
                             With Ads</div>
                     </div>
-                    <div class="btn"><button>$9.99/MONTH^</button></div>
+                    <a href="freeTrial.html">
+                        <div class="btn"><button>$9.99/MONTH^</button></div>
+                    </a>
                     <div class="off"><span>Save 37%*</span></div>
                 </div>
 
@@ -198,7 +225,9 @@
                         <div class="text">Trio Basic<br>
                             With Ads</div>
                     </div>
-                    <div class="btn"><button>$14.99/MONTH^</button></div>
+                    <a href="freeTrial.html">
+                        <div class="btn"><button>$14.99/MONTH^</button></div>
+                    </a>
                     <div class="off"><span>Save 44%*</span></div>
                 </div>
 
@@ -208,7 +237,9 @@
                         <div class="text">Trio Premium<br>
                             No Ads</div>
                     </div>
-                    <div class="btn"><button>$24.99/MONTH^</button></div>
+                    <a href="freeTrial.html">
+                        <div class="btn"><button>$24.99/MONTH^</button></div>
+                    </a>
                     <div class="off"><span>Save 41%*</span></div>
                 </div>
             </div>

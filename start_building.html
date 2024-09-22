@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start-building</title>
+    <link href="images/mainIcon.png" rel="icon">
+    <link href="utility.css" rel="styleSheet">
+
+    <style>
+        body{
+            background-color: black;
+            color: azure;
+            text-align: center;
+           
+        }
+        main{
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 50%;
+        }
+        #logIn{
+            color: rgb(112, 130, 146);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .div2{
+            text-align: left;
+        }
+
+        .div1 h1{
+            font-size: 4rem;
+        }
+        .div1 .normText{
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        .div1 .boldText,.div2 h3{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .add{
+            border: 2px solid white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 1rem;
+            margin: 1rem;
+        }
+        add:hover{
+            border: 2px solid rgb(8, 190, 114);
+        }
+        .div2 p{
+            font-size: 1.5rem;
+        }
+        .div2 .price{
+            font-size: 1.5rem;
+        }
+        hr{
+            margin-top:3.5rem ;
+            margin-bottom:3.5rem ;
+        }
+        a{
+            font-size: 1.5rem;
+            color: rgb(44, 44, 239);
+            font-weight: 300;
+        }
+        img{
+            width: 27%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 class="green">hulu</h1>
+        <div class="btn">
+            <button id="logIn">LOG IN</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="wrapper">
+            <div class="div1">
+                <h1>Build your own plan</h1>
+                <div class="normText">Only pay for the shows, movies, or sports you want to watch.</div>
+                <div class="boldText">Let's start with Hulu (With Ads) for $7.99/mo*</div>
+                <div id="rocketIcon"><img src="images/rocket_icon.png" alt="rocket"></div>
+            </div>
+
+            <div class="div2">
+                <h3>Would you like a no ads plan?</h3>
+                <p>Our no ads plan lets you watch content without ad interruptions.</p>
+                <div class="noAdd add">
+                    <p>No Ads</p>
+                    <div class="price">+$0.00/Mo.<br>Hulu (With Ads)</div>
+                </div>
+                <div class="withAdd add">
+                    <p>With Ads<br>Keep This plan</p>
+                    <div class="price">+$10.00/Mo.<br>Hulu (No Ads)</div>
+                </div>
+                <hr>
+
+                <div class="div2">
+                    <h3>Would you like to add other services to your Hulu plan?</h3>
+                    <p>Access live sports with ESPN+, endless entertainment with Disney+, and award-winning Hulu Originals with Hulu..</p>
+                    <div class="noAdd add">
+                        <p>Disney+<br>With Ads</p>
+                        <div class="price">+$2.00/Mo.<br>Disney Bundle Duo Basic</div>
+                    </div>
+                    <div class="withAdd add">
+                        <p>Disney+ and ESPN+<br>Both with ads</p>
+                        <div class="price">+$7.00/Mo.<br>Disney Bundle Trio Basic</div>
+                    </div>
+                    <div class="withAdd add">
+                        <p>Just Hulu for Now<br>You can add this later</p>
+                        <div class="price">+$0.00/Mo.<br>Hulu (With Ads)</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="div1">
+                <div id="rocketIcon"><img src="images/tv_icon.png" alt="tv"></div>
+                <div class="boldText">Would you like to add Live TV?</div>
+                <div class="normText">With a Live TV plan, you can access 95+ live and on-demand channels on Hulu, the entire Hulu streaming library, endless entertainment with Disney+, and live sports with ESPN+. Live TV plans can include either Hulu (with Ads) or Hulu (No Ads).
+                </div>
+                
+            </div>
+            
+            <div class="div2">
+                <h3>Would you like a no ads plan?</h3>
+                <p>Our no ads plan lets you watch content without ad interruptions.</p>
+                <a>What Channels Can I Watch ?</a>
+                <div class="noAdd add">
+                    <p>Hulu+ LiveTv<br>Includes Disney+ and ESPN +,Both with ads</p>
+                    <div class="price">+$69.00/Mo.<br>Hulu + LiveTv</div>
+                </div>
+                <div class="withAdd add">
+                    <p>Kepp My plan the way it is<br>P.S. Your Current selection is shown below</p>
+                    <div class="price"></div>
+                </div>
+                <hr>
+                <a >Looking for our student discount?</a>
+    </main>
+    
+    
+<footer>
+    <div class="div6">&copy; 2024 Hulu, LLC</div>
+    <div class="div1"><img src="images/add_icon.png">About Ads</div>
+    <div class="div2">Subscriber Agreement</div>
+    <div class="div3">Privacy Policy</div>
+    <div class="div4">Do Not Sell or Share My Personal Information</div>
+    <div class="div5">Your US State Privacy Rights</div>
+  
+
+</footer>
+    
+</body>
+</html>

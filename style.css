@@ -6,9 +6,10 @@
     padding: 0;
 }
 
-button{
+button {
     cursor: pointer;
 }
+
 nav {
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -140,8 +141,8 @@ svg {
     padding: 2%;
 }
 
-@media screen and  (max-width:600px) {
-    .banner1{
+@media screen and (max-width:600px) {
+    .banner1 {
         flex-direction: column;
     }
 }
@@ -225,7 +226,7 @@ svg {
     width: 100%;
     background-color: rgb(14, 12, 12);
     /* padding: 30px 100px 20px 100px; */
-    padding: 7rem;
+    padding: 3rem;
     color: aliceblue;
 }
 
@@ -253,33 +254,45 @@ svg {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 3rem;
+    /* padding: 1rem; */
+    width: 100%;
+    /* height: 200vh; */
 }
 
 @media (max-width : 600px) {
-    .cards {
-        flex-wrap:nowrap;
-    }
+    .cards {}
 }
-.textDiv{
+
+.textDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
+
 .card {
     height: 700px;
-    width: 35%;
+    width: 30%;
     padding: 1.5rem;
     background-color: antiquewhite;
-    border-radius: 5%;
-    margin: 1.5rem;
+    border-radius: 2%;
     opacity: 0.7;
+    margin: 1.5rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+
+.topcard,
+.bottomcard {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
 }
 
 .card:hover {
@@ -297,7 +310,6 @@ svg {
 
 #card3 {
     background-image: url("images/card3Img.jpeg");
-
 }
 
 #card4 {
@@ -323,14 +335,97 @@ svg {
     font-weight: bold;
     padding: 10px;
     border: none;
-
 }
 
 .text7 {
     font-size: 1.2em;
     text-decoration: underline;
     text-align: center;
+    cursor: pointer;
 }
+
+/* **********************popup card********************** */
+.card-pop {
+    height: 100vh;
+    width: 80vw;
+    margin: 6rem;
+    position: absolute;
+    background-color: azure;
+    padding: 1rem;
+    display: none;
+
+}
+
+#cross_icon {
+    font-size: 4rem;
+    color: rgb(112, 130, 146);
+    /* font-weight: 300; */
+}
+
+.content h1 {
+    font-size: 5rem;
+}
+
+.card-pop #mainpara {
+    font-size: 2rem;
+    text-align: left;
+    color: rgb(53, 56, 58);
+}
+
+#zip-code,
+.takeInput button {
+    height: 100%;
+    font-size: 1.7rem;
+    padding: 1rem;
+
+}
+
+.card-pop .takeInput {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* height: 4rem; */
+}
+
+.takeInput #zip-code {
+
+    padding: 1rem;
+    border: 1px solid rgb(112, 130, 146);
+}
+
+.takeInput button {
+
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: black;
+    color: azure;
+}
+
+.card-pop .icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card-pop .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    padding: 4rem;
+}
+
+.content #para {
+    text-align: left;
+    color: rgb(53, 56, 58);
+}
+
+
+
+
+
+
+
+
 
 .bottomDiv {
     display: flex;
@@ -415,7 +510,7 @@ svg {
 
 /* ***************************plans********************** */
 
-.plans{
+.plans {
     background-color: black;
     width: 100%;
     height: auto;
@@ -423,19 +518,23 @@ svg {
     color: aliceblue;
     padding-top: 50px;
 }
-.plans h1{
+
+.plans h1 {
     font-size: 3.0em;
 }
-.plans p,.plans span{
-font-size: 1.5em;
-/* text-align: center; */
+
+.plans p,
+.plans span {
+    font-size: 1.5em;
+    /* text-align: center; */
 }
+
 .plans .text {
     text-align: center;
     margin-top: 1rem;
 }
 
-.dropdown .dropBtn{
+.dropdown .dropBtn {
     background-color: beige;
     border: none;
     border-radius: 1rem;
@@ -445,7 +544,7 @@ font-size: 1.5em;
     padding: 1rem;
 }
 
-.dropdown ul{
+.dropdown ul {
     background-color: beige;
     text-align: left;
     color: black;
@@ -457,10 +556,12 @@ font-size: 1.5em;
     margin-top: 10px;
     display: none;
 }
-.plans ul li{
+
+.plans ul li {
     padding: 1rem;
 }
-.dropdown{
+
+.dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,63 +569,72 @@ font-size: 1.5em;
     flex-direction: column;
 }
 
-.dropdown i{
+.dropdown i {
     font-size: 1rem;
     margin-left: 5%;
 }
 
-.plans3{
+.plans3 {
 
     display: flex;
     align-items: center;
-    justify-content:flex-end;
+    justify-content: flex-end;
     gap: 5%;
     padding: 1rem;
 }
 
-.actual_plans{
+.actual_plans {
     margin-top: 2rem;
 }
 
-#off{
+#off {
     font-size: 0.3rem;
 }
-.plan button{
-width: 100%;
-background-color: rgb(194, 194, 174);
-font-size: 1.5rem;
-padding: 1rem;
+
+.plan button {
+    width: 100%;
+    background-color: rgb(194, 194, 174);
+    font-size: 1.5rem;
+    padding: 1rem;
 }
-#middleBtn{
+
+#middleBtn {
     background-color: aqua;
     padding: 0.6rem;
     border: none;
     border-radius: 1rem;
 }
+
 /* *********************************plan table *********************** */
-.planPanel{
-    width:100%;
+.planPanel {
+    width: 100%;
     padding: 2rem;
 
 }
-table{
+
+table {
     border: none;
     font-size: 1.5rem;
 }
-table td{
+
+table td {
     padding: 1rem;
 }
-table i{
+
+table i {
     color: rgb(43, 180, 123);
     font-size: 2rem;
     font-weight: 900;
 }
-.dash,#dropArrow{
+
+.dash,
+#dropArrow {
     font-size: 1.5rem;
 
 }
+
 /* **************************************footer******************************************/
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -533,23 +643,26 @@ footer{
     font-size: 1.5rem;
 }
 
-footer .col{
+footer .col {
     display: inline-block;
-    
+
 }
-.mediaIcons{
+
+.mediaIcons {
     display: flex;
     align-items: center;
     justify-content: left;
     padding: 50px;
 
 }
-.mediaIcons img{
-    height:25px;
-    width:25px;
+
+.mediaIcons img {
+    height: 25px;
+    width: 25px;
     margin: 20px;
 }
-footer .col span{
+
+footer .col span {
     color: rgb(148, 138, 138);
     /* font-size: 2rem; */
     margin: 1rem;

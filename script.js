@@ -64,3 +64,24 @@ function showDropDown()
 {
 
 }
+
+let cross = document.querySelector("#cross_icon");
+let pop_card = document.querySelector(".card-pop");
+let search = document.querySelector("#search_channel");
+
+let open = ()=>{
+    if(pop_card.style.display == "none"){
+        pop_card.style.display="block";
+    }
+   
+ }
+
+ let close = ()=>{
+    if ( pop_card.style.display=="block") {
+        pop_card.style.display="none";
+    }
+    pop_card.style.display= "none";
+     }
+
+ cross.addEventListener("click",close);
+ search.addEventListener("click",open);
